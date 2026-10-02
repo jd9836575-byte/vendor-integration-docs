@@ -1,0 +1,10 @@
+# Sample client configuration (demo values)
+environment: sandbox
+base_url: https://sandbox.api.example-freight.test/v1
+timeout_seconds: 10
+retries: 3
+webhook:
+  path: /hooks/efc
+  events:
+    - shipment.delivered
+    - shipment.exception
